@@ -189,7 +189,7 @@ sections:
   #       {{< gallery album="demo" >}}
   #   design:
   #     columns: '1'
-  - block: markdown
+  - block: collection
     id: featured
     content:
       title: Publications

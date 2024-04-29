@@ -1,14 +1,23 @@
 ---
 title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for Deep Image Matting'
 
+<!-- {{% callout note %}}
+Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+{{% /callout %}}
+
+{{% callout note %}}
+Create your slides in Markdown - click the _Slides_ button to check out the example.
+{{% /callout %}}
+
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 
 
-authors:
-  - "Zixuan Ye"
-  - "Yutong Dai"  
+# authors:
+#   - "Zixuan Ye"
+#   - "Yutong Dai"  
   # - [Yutong Dai](),
   # [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN),
   # [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN),
