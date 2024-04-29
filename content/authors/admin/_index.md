@@ -87,15 +87,15 @@ education:
 social:
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
+    link: https://github.com/zixuan-ye
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/resume.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 ---
 
-I am a second-year Master student at the School of Artificial Intelligence and Automation, Huazhong University of Science and Technology (expected to graduate in 2025 summer). My research interests include image matting, dense prediction and content generation.
+I am a second-year Master student at the School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, supervised by Professor [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN) and [Hao Lu](https://sites.google.com/site/poppinace/) (expected to graduate in 2025 summer). My research interests include image matting, dense prediction and content generation.
 {style="text-align: justify;"}
