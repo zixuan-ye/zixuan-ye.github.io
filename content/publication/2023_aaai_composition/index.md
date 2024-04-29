@@ -5,12 +5,16 @@ title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  ‘**Zixuan Ye**，
-  [Yutong Dai](https://dongdong93.github.io/),
-  [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN),
-  [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN),
-  [Hao Lu](https://sites.google.com/site/poppinace/)
-  ’
+  - Zixuan Ye
+    -name: Zixuan Ye
+  - Yutong Dai  
+    -name: Yutong Dai
+    homepage: https://dongdong93.github.io/
+  # - naem [Yutong Dai](),
+  # [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN),
+  # [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN),
+  # [Hao Lu](https://sites.google.com/site/poppinace/)
+  # ’
   
 
 # Author notes (optional)
