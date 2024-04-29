@@ -6,7 +6,7 @@ title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for
 # and it will be replaced with their full name and linked to their profile.
 
 
-author:
+authors:
   - "**Zixuan Ye**"
   - "Yutong Dai"  
   # - naem [Yutong Dai](),
