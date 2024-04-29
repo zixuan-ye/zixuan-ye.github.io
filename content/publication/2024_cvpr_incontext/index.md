@@ -45,9 +45,9 @@ featured: true
 
 url_pdf: 'https://arxiv.org/pdf/2403.15789.pdf'
 url_code: 'https://github.com/tiny-smart/in-context-matting'
-# url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_dataset: 'https://github.com/tiny-smart/in-context-matting'
 # url_poster: ''
-# url_project: ''
+url_project: 'https://tiny-smart.github.io/icm.github.io/'
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
 
