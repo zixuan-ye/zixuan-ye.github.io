@@ -4,12 +4,14 @@ title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
-authors:
-  - Zixuan Ye
-    -name: Zixuan Ye
-  - Yutong Dai  
-    -name: Yutong Dai
-    homepage: https://dongdong93.github.io/
+[author]
+  name = "George Cushen"
+  homepage = "https://georgecushen.com"
+
+
+# author:
+#   - Zixuan Ye
+#   - Yutong Dai  
   # - naem [Yutong Dai](),
   # [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN),
   # [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN),
@@ -17,10 +19,10 @@ authors:
   # ’
   
 
-# Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+# # Author notes (optional)
+# author_notes:
+#   - 'Equal contribution'
+#   - 'Equal contribution'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
