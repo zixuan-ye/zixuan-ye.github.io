@@ -1,8 +1,8 @@
 ---
 # Display name
-title: Zixuan Ye
+title: 叶紫璇
 
-name_pronunciation: 叶紫璇
+name_pronunciation: Zixuan Ye
 # Full name (for SEO)
 first_name: Zixuan
 last_name: Ye
