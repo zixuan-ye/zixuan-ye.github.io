@@ -15,14 +15,14 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Master of Computer Vision
+role: Master of Artificial Intelligence
 
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Huazhong University of Science and Technology
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a second-year Master student at the School of Artificial Intelligence and Automation, Huazhong University of Science and Technology (expected to graduate in 2025 summer). My research interests include image matting, dense prediction and content generation.
+bio: 
 
 # Interests to show in About widget
 interests:
@@ -96,3 +96,6 @@ social:
 highlight_name: true
 
 ---
+
+I am a second-year Master student at the School of Artificial Intelligence and Automation, Huazhong University of Science and Technology (expected to graduate in 2025 summer). My research interests include image matting, dense prediction and content generation.
+{style="text-align: justify;"}
