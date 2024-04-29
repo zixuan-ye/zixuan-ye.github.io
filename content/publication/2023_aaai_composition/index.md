@@ -7,9 +7,9 @@ title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for
 
 
 authors:
-  - "[Zixuan Ye](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN)"
+  - "Zixuan Ye"
   - "Yutong Dai"  
-  # - naem [Yutong Dai](),
+  # - [Yutong Dai](),
   # [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN),
   # [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN),
   # [Hao Lu](https://sites.google.com/site/poppinace/)
