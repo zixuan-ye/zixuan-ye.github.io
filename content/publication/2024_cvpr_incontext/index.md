@@ -1,12 +1,12 @@
 ---
-title: 'SAPA: Similarity-Aware Point Affiliation for Feature Upsampling'
+title: 'In-Context Matting'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 
 authors:
-  - "In Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS 2022) Spotlight"
+  - "In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024) Highlight"
 # authors:
 #   - "Zixuan Ye"
 #   - "Yutong Dai"  
@@ -25,15 +25,15 @@ authors:
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS 2022) Spotlight
+publication: In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024) Highlight
 
-abstract: We introduce point affiliation into feature upsampling, a notion that describes the affiliation of each upsampled point to a semantic cluster formed by local decoder feature points with semantic similarity. By rethinking point affiliation, we present a generic formulation for generating upsampling kernels. The kernels encourage not only semantic smoothness but also boundary sharpness in the upsampled feature maps. Such properties are particularly useful for some dense prediction tasks such as semantic segmentation. The key idea of our formulation is to generate similarity-aware kernels by comparing the similarity between each encoder feature point and the spatially associated local region of decoder features. In this way, the encoder feature point can function as a cue to inform the semantic cluster of upsampled feature points. To embody the formulation, we further instantiate a lightweight upsampling operator, termed Similarity-Aware Point Affiliation (SAPA), and investigate its variants. SAPA invites consistent performance improvements on a number of dense prediction tasks, including semantic segmentation, object detection, depth estimation, and image matting. 
-
-
-summary: "[Hao Lu](https://sites.google.com/site/poppinace/), Wenze Liu, __Zixuan Ye__, Hongtao Fu, Yuliang Liu, [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN)"
+abstract: We introduce in-context matting, a novel task setting of image matting. Given a reference image of a certain foreground and guided priors such as points, scribbles, and masks, in-context matting enables automatic alpha estimation on a batch of target images of the same foreground category, without additional auxiliary input. This setting marries good performance in auxiliary input-based matting and ease of use in automatic matting, which finds a good trade-off between customization and automation. To overcome the key challenge of accurate foreground matching, we introduce IconMatting, an in-context matting model built upon a pre-trained text-to-image diffusion model. Conditioned on inter- and intra-similarity matching, IconMatting can make full use of reference context to generate accurate target alpha mattes. To benchmark the task, we also introduce a novel testing dataset ICM-57, covering 57 groups of real-world images. Quantitative and qualitative results on the ICM-57 testing set show that IconMatting rivals the accuracy of trimap-based matting while retaining the automation level akin to automatic matting. 
 
 
-tags: [Feature Upsampling]
+summary: "He Guo, __Zixuan Ye__, [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN), [Hao Lu](https://sites.google.com/site/poppinace/)"
+
+
+tags: [Image Matting; Diffusion Model]
 
 # Display this page in the Featured widget?
 featured: true
@@ -43,8 +43,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2209.12866'
-url_code: 'https://github.com/poppinace/sapa'
+url_pdf: 'https://arxiv.org/pdf/2403.15789.pdf'
+url_code: 'https://github.com/tiny-smart/in-context-matting'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''
