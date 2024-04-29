@@ -5,15 +5,12 @@ title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - ['Zixuan Ye']
-  - Yutong Dai
-  - Chaoyi Hong
-  - Zhiguo Cao
-  - Hao Lu
-  # - [Yutong Dai](https://dongdong93.github.io/)
-  # - [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN)
-  # - [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN)
-  # - [Hao Lu](https://sites.google.com/site/poppinace/)
+  ‘**Zixuan Ye**，
+  [Yutong Dai](https://dongdong93.github.io/),
+  [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN),
+  [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN),
+  [Hao Lu](https://sites.google.com/site/poppinace/)
+  ’
   
 
 # Author notes (optional)
@@ -30,6 +27,8 @@ publication_types: ['paper-conference']
 publication: In Proceedings of AAAI Conference on Artificial Intelligence (AAAI 2023)
 
 abstract: We study the composition style in deep image matting, a notion that characterizes a data generation flow on how to exploit limited foregrounds and random backgrounds to form a training dataset. Prior art executes this flow in a completely random manner by simply going through the foreground pool or by optionally combining two foregrounds before foreground-background composition. In this work, we first show that naive foreground combination can be problematic and therefore derive an alternative formulation to reasonably combine foregrounds. Our second contribution is an observation that matting performance can benefit from a certain occurrence frequency of combined foregrounds and their associated source foregrounds during training. Inspired by this, we introduce a novel composition style that binds the source and combined foregrounds in a definite triplet. In addition, we also find that different orders of foreground combination lead to different foreground patterns, which further inspires a quadruplet-based composition style. Results under controlled experiments on four matting baselines show that our composition styles outperform existing ones and invite consistent performance improvement on both composited and real-world datasets. 
+
+summary: In Proceedings of AAAI Conference on Artificial Intelligence (AAAI 2023)
 
 
 tags: [Image Matting; Data Composition]
