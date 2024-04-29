@@ -6,10 +6,14 @@ title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Zixuan Ye
-  - [Yutong Dai](https://dongdong93.github.io/)
-  - [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN)
-  - [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN)
-  - [Hao Lu](https://sites.google.com/site/poppinace/)
+  - Yutong Dai
+  - Chaoyi Hong
+  - Zhiguo Cao
+  - Hao Lu
+  # - [Yutong Dai](https://dongdong93.github.io/)
+  # - [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN)
+  # - [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN)
+  # - [Hao Lu](https://sites.google.com/site/poppinace/)
   
 
 # Author notes (optional)
