@@ -5,7 +5,7 @@ title: 'Infusing Definiteness into Randomness: Rethinking Composition Styles for
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Zixuan Ye
+  - ['Zixuan Ye']
   - Yutong Dai
   - Chaoyi Hong
   - Zhiguo Cao
@@ -31,7 +31,9 @@ publication: In Proceedings of AAAI Conference on Artificial Intelligence (AAAI 
 
 abstract: We study the composition style in deep image matting, a notion that characterizes a data generation flow on how to exploit limited foregrounds and random backgrounds to form a training dataset. Prior art executes this flow in a completely random manner by simply going through the foreground pool or by optionally combining two foregrounds before foreground-background composition. In this work, we first show that naive foreground combination can be problematic and therefore derive an alternative formulation to reasonably combine foregrounds. Our second contribution is an observation that matting performance can benefit from a certain occurrence frequency of combined foregrounds and their associated source foregrounds during training. Inspired by this, we introduce a novel composition style that binds the source and combined foregrounds in a definite triplet. In addition, we also find that different orders of foreground combination lead to different foreground patterns, which further inspires a quadruplet-based composition style. Results under controlled experiments on four matting baselines show that our composition styles outperform existing ones and invite consistent performance improvement on both composited and real-world datasets. 
 
-tags: []
+short
+
+tags: [Image Matting; Data Composition]
 
 # Display this page in the Featured widget?
 featured: true
@@ -47,15 +49,15 @@ url_code: 'https://github.com/zixuan-ye/composition_styles'
 # url_poster: ''
 # url_project: ''
 # url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
 url_video: 'https://youtu.be/wmvP3YcGcSQ'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
-  preview_only: false
+# image:
+#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+#   focal_point: ''
+#   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -72,7 +74,7 @@ image:
 
 ---
 
-{{% callout note %}}
+<!-- {{% callout note %}}
 Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 {{% /callout %}}
 
@@ -80,4 +82,4 @@ Click the _Cite_ button above to demo the feature to enable visitors to import p
 Create your slides in Markdown - click the _Slides_ button to check out the example.
 {{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
