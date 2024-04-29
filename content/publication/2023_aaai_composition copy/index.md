@@ -1,12 +1,12 @@
 ---
-title: 'SAPA: Similarity-Aware Point Affiliation for Feature Upsampling'
+title: 'In-Context Matting'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 
 authors:
-  - "In Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS 2022) Spotlight"
+  - "In Proceedings of AAAI Conference on Artificial Intelligence (AAAI 2023)"
 # authors:
 #   - "Zixuan Ye"
 #   - "Yutong Dai"  
@@ -25,15 +25,14 @@ authors:
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS 2022) Spotlight
+publication: In Proceedings of AAAI Conference on Artificial Intelligence (AAAI 2023)
 
-abstract: We introduce point affiliation into feature upsampling, a notion that describes the affiliation of each upsampled point to a semantic cluster formed by local decoder feature points with semantic similarity. By rethinking point affiliation, we present a generic formulation for generating upsampling kernels. The kernels encourage not only semantic smoothness but also boundary sharpness in the upsampled feature maps. Such properties are particularly useful for some dense prediction tasks such as semantic segmentation. The key idea of our formulation is to generate similarity-aware kernels by comparing the similarity between each encoder feature point and the spatially associated local region of decoder features. In this way, the encoder feature point can function as a cue to inform the semantic cluster of upsampled feature points. To embody the formulation, we further instantiate a lightweight upsampling operator, termed Similarity-Aware Point Affiliation, and investigate its variants. SAPA invites consistent performance improvements on a number of dense prediction tasks, including semantic segmentation, object detection, depth estimation, and image matting. 
+abstract: We study the composition style in deep image matting, a notion that characterizes a data generation flow on how to exploit limited foregrounds and random backgrounds to form a training dataset. Prior art executes this flow in a completely random manner by simply going through the foreground pool or by optionally combining two foregrounds before foreground-background composition. In this work, we first show that naive foreground combination can be problematic and therefore derive an alternative formulation to reasonably combine foregrounds. Our second contribution is an observation that matting performance can benefit from a certain occurrence frequency of combined foregrounds and their associated source foregrounds during training. Inspired by this, we introduce a novel composition style that binds the source and combined foregrounds in a definite triplet. In addition, we also find that different orders of foreground combination lead to different foreground patterns, which further inspires a quadruplet-based composition style. Results under controlled experiments on four matting baselines show that our composition styles outperform existing ones and invite consistent performance improvement on both composited and real-world datasets. 
+
+summary: __Zixuan Ye__+, [Yutong Dai+](https://dongdong93.github.io/), [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN), [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN), [Hao Lu](https://sites.google.com/site/poppinace/)
 
 
-summary: "[Hao Lu](https://sites.google.com/site/poppinace/),Wenze Liu, __Zixuan Ye__, Hongtao Fu, Yuliang Liu, [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN)"
-
-
-tags: [Feature Upsampling]
+tags: [Image Matting; Data Composition]
 
 # Display this page in the Featured widget?
 featured: true
@@ -43,8 +42,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2209.12866'
-url_code: 'https://github.com/poppinace/sapa'
+url_pdf: 'https://arxiv.org/abs/2212.13517'
+url_code: 'https://github.com/tiny-smart/in-context-matting'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''
