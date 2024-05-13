@@ -17,7 +17,7 @@ authors:
   # ’
   
 
-
+date: '2024-02-27T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).

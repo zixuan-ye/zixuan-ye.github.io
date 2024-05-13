@@ -193,10 +193,11 @@ sections:
     id: featured
     content:
       title: Publications
-      filters:
+      filters: 
         folders:
           - publication
         featured_only: true
+      order: desc
     design:
       columns: '2'
       view: compact
