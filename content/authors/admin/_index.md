@@ -1,8 +1,8 @@
 ---
 # Display name
-title: 叶紫璇
+title: Zixuan Ye
 
-name_pronunciation: Zixuan Ye
+# name_pronunciation: Zixuan Ye
 # Full name (for SEO)
 first_name: Zixuan
 last_name: Ye
@@ -33,7 +33,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: MEng in Computer Vision
+    - course: MEng in Artificial Intelligence
       institution: Huazhong University of Science and Technology
       year: 2022
     - course: BSc in Automation
