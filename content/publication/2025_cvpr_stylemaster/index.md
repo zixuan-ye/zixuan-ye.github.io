@@ -7,7 +7,7 @@ title: 'StyleMaster: Stylize Your Video with Artistic Generation and Translation
   
 
 authors:
-  - "In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)"
+  - "In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)"
 
 date: '2025-02-27T00:00:00Z'
 
