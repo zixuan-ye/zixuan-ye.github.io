@@ -4,16 +4,6 @@ title: 'StyleMaster: Stylize Your Video with Artistic Generation and Translation
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 
-authors:
-  - "In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)"
-# authors:
-#   - "Zixuan Ye"
-#   - "Yutong Dai"  
-  # - [Yutong Dai](),
-  # [Chaoyi Hong](https://scholar.google.com/citations?user=N9YzPMcAAAAJ&hl=zh-CN),
-  # [Zhiguo Cao](https://scholar.google.com.sg/citations?user=396o2BAAAAAJ&hl=zh-CN),
-  # [Hao Lu](https://sites.google.com/site/poppinace/)
-  # ’
   
 
 date: '2025-02-27T00:00:00Z'
