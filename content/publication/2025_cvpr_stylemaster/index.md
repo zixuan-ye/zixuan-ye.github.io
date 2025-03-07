@@ -1,10 +1,13 @@
 ---
-title: 'StyleMaster: Stylize Your Video with Artistic Generation and Translation
+title: 'StyleMaster: Stylize Your Video with Artistic Generation and Translation'
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 
   
+
+authors:
+  - "In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)"
 
 date: '2025-02-27T00:00:00Z'
 
