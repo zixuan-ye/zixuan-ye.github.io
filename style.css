@@ -1,0 +1,524 @@
+/* ===== GLOBAL STYLES & CUSTOM PROPERTIES ===== */
+:root {
+    --primary-color: #0077cc;
+    --primary-color-light: #e6f2ff;
+    --background-color: #ffffff;
+    --sidebar-bg: #f8f9fa;
+    --text-color: #343a40;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; font-weight: 500;}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 70px;
+    margin-top: -50px;
+    margin-bottom: 4rem;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+section h2 i {
+    color: var(--primary-color);
+}
+
+
+/* ===== CUSTOM SCROLLBAR ("滚动条") ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* ===== MAIN LAYOUT ===== */
+.page-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-left: 280px;
+    padding: 3rem 4rem;
+    width: calc(100% - 280px);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sidebar-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--background-color);
+    box-shadow: 0 4px 15px var(--shadow-color);
+    margin-bottom: 1rem;
+}
+.sidebar-header h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.4rem;
+}
+.sidebar-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.sidebar-nav {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.sidebar-nav li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav li a:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.sidebar-nav li a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.sidebar-nav li a i {
+    margin-right: 0.75rem;
+    width: 20px;
+}
+
+.sidebar-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* ===== CONTENT AREA STYLES ===== */
+.profile-header {
+    display: none;
+}
+
+.profile-header .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-top: -0.5rem;
+}
+
+/* ===== News Section ===== */
+.news-container {
+    max-height: 260px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.news-list {
+    list-style: none;
+    padding-left: 0;
+}
+.news-item {
+    font-family: 'Inter', serif;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.8rem 0;
+}
+.news-date {
+    flex-shrink: 0;
+    flex-basis: 100px;
+    font-weight: 500;
+}
+.news-text {
+    line-height: 1.6;
+    font-size: 1.05rem;
+    font-style: italic; /* Set news text to italic */
+}
+.news-text b {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* ===== Timeline Layout for Education/Experience ===== */
+.timeline {
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 24px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 80px;
+    padding-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    padding: 5px;
+}
+
+.timeline-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.timeline-body {
+    padding-right: 170px;
+}
+
+.timeline-date {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    width: 150px;
+    text-align: right;
+}
+
+.timeline-body .institution {
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: -0.5rem;
+}
+
+.timeline-body .details {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+
+/* --- Publications (TWO-COLUMN LAYOUT) --- */
+/* New UI Design for Publication Subheadings */
+section#publications h3 {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.publication-list {
+    list-style: none;
+}
+
+.publication-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.publication-item:hover {
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.publication-details {
+    flex: 1;
+}
+
+.publication-media {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.publication-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
+
+.publication-item .title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+.publication-item .authors {
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+.publication-item .authors b {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.publication-item .venue {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+.venue .venue-award {
+    margin-left: 8px;
+    font-weight: 600;
+    color: #d48806;
+    font-style: normal;
+}
+
+/* ===== Styles for Publication Links ===== */
+.publication-links {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.link-button i {
+    font-size: 0.9rem;
+}
+
+.link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--shadow-color);
+    text-decoration: none;
+}
+
+.link-button.project {
+    background-color: #f0faf5;
+    color: #23784c;
+    border-color: #d4eadd;
+}
+.link-button.project:hover {
+    background-color: #e6f5ec;
+    border-color: #c2e0ca;
+}
+.link-button.pdf {
+    background-color: #fff0f0;
+    color: #d9363e;
+    border-color: #ffd6d6;
+}
+.link-button.pdf:hover {
+    background-color: #ffe6e6;
+    border-color: #ffc2c2;
+}
+.link-button.code {
+    background-color: #f6f8fa;
+    color: #24292f;
+    border-color: #d0d7de;
+}
+.link-button.code:hover {
+    background-color: #f0f2f5;
+    border-color: #c4ccd4;
+}
+
+/* --- Honors --- */
+.honors-list {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+.honors-list li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+.honors-list li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f005";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .content {
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 2rem;
+    }
+    .profile-header {
+        display: block;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stack publication item on mobile */
+    .publication-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .publication-media {
+        flex-basis: auto;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    /* Stack timeline item on mobile */
+    .timeline-body {
+        padding-right: 0;
+    }
+    .timeline-date {
+        position: static;
+        width: 100%;
+        text-align: left;
+        padding-top: 0.5rem;
+        font-weight: 600;
+    }
+    .news-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 15px;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+
+    .content {
+        padding: 1.5rem 1rem;
+    }
+    section {
+        padding-top: 60px;
+        margin-top: -60px;
+    }
+    .publication-item {
+        padding: 1rem;
+    }
+    .timeline {
+        padding-left: 0;
+    }
+    .timeline-item {
+        padding-left: 70px;
+    }
+    .timeline::before {
+        left: 24px;
+    }
+}
